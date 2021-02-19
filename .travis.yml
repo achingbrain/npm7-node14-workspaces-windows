@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+  - '14'
+  - '15'
+
+os:
+  - windows
+
+before_install:
+  - npm install -g npm@7

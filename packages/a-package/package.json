@@ -1,0 +1,14 @@
+{
+  "name": "a-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "devDependencies": {
+    "tape": "^5.1.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
