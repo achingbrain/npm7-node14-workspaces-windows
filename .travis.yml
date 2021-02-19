@@ -9,4 +9,5 @@ os:
 
 before_install:
   # https://travis-ci.community/t/command-npm-i-g-npm-latest-fails/431/7
-  - node `npm prefix -g`/node_modules/npm/bin/npm-cli.js i -g npm@7
+  - if [[ "$TRAVIS_OS_NAME" == "windows" ]]; then export NPM_CONFIG_PREFIX=c:\\npm_prefix PATH="/c/npm_prefix:$PATH"; fi
+  - npm install -g npm@7
