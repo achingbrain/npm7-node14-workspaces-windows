@@ -8,4 +8,5 @@ os:
   - windows
 
 before_install:
-  - npm install -g npm@7
+  # https://travis-ci.community/t/command-npm-i-g-npm-latest-fails/431/7
+  - node `npm prefix -g`/node_modules/npm/bin/npm-cli.js i -g npm@7
