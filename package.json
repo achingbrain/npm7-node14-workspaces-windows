@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm test --prefix packages/a-package"
+    "test": "ls -laR && npm test --prefix packages/a-package"
   },
   "author": "",
   "license": "ISC",
